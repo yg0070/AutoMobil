@@ -22,7 +22,7 @@ spring:
     cache: false
     enabled: false
 server:
-  port: 8010
+  port: 8012
   tomcat:
     uri-encoding: utf-8
   context-path: /AutoMobile
