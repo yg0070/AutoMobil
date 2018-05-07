@@ -1,0 +1,37 @@
+spring:
+  http:
+    encoding:
+      charset: utf-8
+      force: true
+      enabled: true
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource
+    url: jdbc:mysql://127.0.0.1:3306/kacheyunsecond?characterEncoding=UTF-8
+    username: root
+    password: root
+    driver-class-name: com.mysql.jdbc.Driver
+  #添加jsp配置
+  mvc:
+    view:
+      #文件前缀
+      prefix: /WEB-INF/view/
+      #文件后缀
+      suffix: .jsp
+  #关闭默认模板引擎
+  thymeleaf:
+    cache: false
+    enabled: false
+server:
+  port: 8010
+  tomcat:
+    uri-encoding: utf-8
+  context-path: /AutoMobile
+mybatis-plus:
+  mapper-locations: classpath:/mapper/*.xml
+  type-aliases-package: com.jy.wms.api.model
+  global-config:
+    id-type: 2
+    db-column-underline: true
+logging:
+  level:
+    root: info

@@ -1,0 +1,154 @@
+.fa {
+display: inline-block;
+font-family: FontAwesome;
+font-style: normal;
+font-weight: normal;
+line-height: 1;
+-webkit-font-smoothing: antialiased;
+-moz-osx-font-smoothing: grayscale;
+}
+.fa2 {
+display: inline-block;
+font-family: FontAwesome;
+font-style: normal;
+font-weight: normal;
+line-height: 4.5;
+-webkit-font-smoothing: antialiased;
+-moz-osx-font-smoothing: grayscale;
+}
+.split-pane.fixed-left > .split-pane-divider,
+.split-pane.fixed-right > .split-pane-divider,
+.split-pane.vertical-percent > .split-pane-divider {
+	position: absolute;
+	height: 100%;
+	top: 0;
+	cursor: ew-resize;
+	cursor: w-resize\9;
+	z-index: 2;
+}
+*, *:before, *:after {
+-webkit-box-sizing: border-box;
+-moz-box-sizing: border-box;
+box-sizing: border-box;
+}
+.btn:hover, .btn:focus {
+color: #333;
+text-decoration: none;
+}
+.btn, a:link, button {
+-webkit-tap-highlight-color: rgba(169,3,41,.5);
+}
+a:hover, a:focus {
+color: #214e75;
+text-decoration: underline;
+}
+a:active, a:hover {
+outline: 0;
+}
+.btn {
+border-radius: 2px;
+box-shadow: inset 0 -2px 0 rgba(0,0,0,.05);
+-webkit-box-shadow: inset 0 -2px 0 rgba(0,0,0,.05);
+}
+.btn, a:link, button {
+-webkit-tap-highlight-color: rgba(169,3,41,.5);
+}
+.no-padding {
+padding: 0!important;
+}
+.btn {
+display: inline-block;
+margin-bottom: 0;
+font-weight: normal;
+text-align: center;
+vertical-align: middle;
+cursor: pointer;
+background-image: none;
+border: 1px solid transparent;
+white-space: nowrap;
+padding: 6px 12px;
+font-size: 13px;
+line-height: 1.428571429;
+border-radius: 2px;
+-webkit-user-select: none;
+-moz-user-select: none;
+-ms-user-select: none;
+-o-user-select: none;
+user-select: none;
+}
+a {
+color: #3276b1;
+text-decoration: none;
+}
+a {
+background: transparent;
+}
+
+.clearfix, .inner-spacer:after, .jarviswidget, .jarviswidget-editbox, .jarviswidget>div {
+zoom: 1;
+}
+
+.split-pane.fixed-left > .split-pane-resize-shim,
+.split-pane.fixed-right > .split-pane-resize-shim,
+.split-pane.vertical-percent > .split-pane-resize-shim {
+	cursor: ew-resize;
+	cursor: w-resize\9;
+}
+.fa-caret-left:before{content:"\f0d9"}
+.fa-caret-right:before{content:"\f0da"}
+
+.fa-eye-slash:before{content:"\f070"}
+
+.split-pane-divider {
+        background: #aaa;
+     }
+     #left-component {
+     	min-width: 25em;
+        /* width: 20em; */
+     }
+     #my-divider {
+         left: 20em; /* Same as left component width */
+         width: 5px;
+     }
+     #right-component {
+         left: 20em;  /* Same as left component width */
+         margin-left: 5px;  /* Same as divider width */
+         /* overflow:hidden; */
+     }
+     #leftToggleBtn {
+		position: absolute;
+		top: 50%;
+		bottom: 50%;
+		left: -1px;
+		margin-top: -32px;
+		width: 14px;
+		height: 64px;
+		background: #9EB9C2;
+		border: 1px solid #92A2A8;
+		border-left: none;
+		line-height: 64px;
+		z-index: 10;
+	}
+	#rightToggleBtn {
+		position: absolute;
+	    top: 50%;
+	    bottom: 50%;
+	    left: 98.4%;
+	    margin-top: -32px;
+	    width: 14px;
+	    height: 64px;
+	    background: #9EB9C2;
+	    border: 1px solid #92A2A8;
+	    border-right: none;
+	    line-height: 64px;
+	    z-index: 10;
+	}
+	.hideLeftCom #left-component, .hideLeftCom #my-divider,.hideSearchOp{display: none;}
+	.hideLeftCom #right-component{left: 0!important;margin-left: 0!important;}
+	.hideLeftCom #leftToggleBtn{width: 17px!important;}
+	
+	.hideRightCom #right-component, .hideRightCom #my-divider,.hideSearchOp{display: none;}
+	.hideRightCom #left-component{right: 0!important;margin-right: 0!important;width:100%!important;}
+	.hideRightCom #rightToggleBtn{width: 16px!important;left:98.8%!important;}
+	
+	

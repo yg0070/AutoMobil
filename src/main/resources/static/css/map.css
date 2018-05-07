@@ -1,0 +1,456 @@
+/* 
+ 闂佸搫鍊稿ú锝呪枎閵忋倕瑙﹂柨鐔轰腹ap.css
+闂佸憡甯楃粙鎴犵磽閹惧顩查柨鐔诲Г椤拷宕熼鍌や紩闂佸憡顨愰幏锟界紓渚囧亯椤曆囨倵閿熺禋ss
+闂佸憡甯楃粙鎴犵磽閹捐绫嶉柕澶涢檮閸╋拷
+闂佸搫鐗為幏鐑藉蓟婵犲啰鈹嶆い鏃囧Г閺嗩參鏌￠崘锕�姕婵狅拷鎷�
+*/
+/*
+	闂侀潻闄勫妯好瑰Ο娲绘付婵☆垱顑欓崥鍥煛瀹ュ懎妲荤紒鎲嬫嫹
+*/
+/* CSS Document */
+input[type="checkbox"] {
+	-webkit-appearance: none;
+	height: 16px;
+	vertical-align: middle;
+	width: 16px;
+	border: 1px solid #C1C1C1;
+}
+
+input[type="checkbox"]:hover {
+	border: 1px solid #C1C1C1;
+	cursor: pointer;
+}
+
+input[type="checkbox"]:checked {
+	background-image: url("../images/ckd.png");
+}
+
+input[type="checkbox"]:checked:hover {
+	cursor: pointer;
+}
+
+#dituContent {
+	position: absolute;
+	z-index: 2;
+	overflow:hidden;
+}
+
+html,body {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 100%;
+}
+
+li {
+	list-style: none;
+}
+
+#dituContent {
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	font-family: "閻庣敻鍋婇崳锝呪枖閵堝棙濮滄い鏍仧閹凤拷;
+}
+
+.iw_poi_title {
+	color: #CC5522;
+	font-size: 14px;
+	font-weight: bold;
+	overflow: hidden;
+	padding-right: 13px;
+	white-space: nowrap
+}
+
+.iw_poi_content {
+	font: 12px arial, sans-serif;
+	overflow: visible;
+	padding-top: 4px;
+	white-space: -moz-pre-wrap;
+	word-wrap: break-word
+}
+/* 闂備緡鍋勯ˇ鐢稿Υ瀹ュ纭�柍鈺佸暟婢瑰锟介鍡樺*/
+#menushow {
+	position: absolute;
+	z-index: 3;
+	/* width: 224px; */
+	height: 31px;
+	background-color: #568A89;/* #2490ED; */
+	top: 13%;
+	right: -170px;
+	color: white;
+	font-weight: bolder;
+	line-height: 31px;
+	cursor: pointer;
+}
+
+#gnf {
+	float: left;
+	height: 30px;
+	width: 45px;
+	padding-left: 10px;
+	display: block;
+}
+
+#menall {
+	position: absolute;
+	z-index: 3;
+	background-color: white;
+	height: 31px;
+	width: 125px;
+	margin-left: 1%;
+	margin-top: 10%;
+}
+
+#menall2 {
+	position: absolute;
+	z-index: 3;
+	background-color: white;
+	height: 31px;
+	width: 48px;
+	margin-left: 1%;
+	margin-top: 10%;
+}
+
+#wxdtdiv {
+	position: absolute;
+	z-index: 3;
+	background-color: white;
+	height: 50px;
+	width: 48px;
+	right: 10px;
+	margin-top: 0.5%;
+	background-image: url("../images/wx.png");
+	cursor: pointer;
+}
+
+.menusclick {
+	height: 30px;
+	width: 30px;
+	border: 1px solid #c7c7c7;
+	float: left;
+	border-left: none;
+	cursor: pointer;
+}
+
+.menusclick2 {
+	height: 30px;
+	width: 48px;
+	border: 1px solid #c7c7c7;
+	float: left;
+	border-left: none;
+	cursor: pointer;
+	overflow: hidden;
+	line-height: 30px;
+	font: "閻庣敻鍋婇崰娑㈡嫃鐎ｎ喗鈷栭柛娑橆嚟閹凤拷, 14px, bold;
+}
+
+.menuimg {
+	margin: 0px 0px 8px 4px;
+}
+
+.menuimg2 {
+	margin: 5px 0 0 5px;
+}
+
+#sele {
+	position: absolute;
+	z-index: 3;
+	height: 37px;
+	width: 150px;
+	margin-top: 10px;
+	right: 70px;
+}
+/*
+ 婵炴垶鎸搁…鐑藉Υ婢跺绶炵憸宥夋儍椤掑嫬鎹堕柡澶嬪缁傚牏绱掗悪娆忓暙閻掑吋淇婂Δ瀣
+*/
+#max {
+	color: #333;
+	position: absolute;
+	z-index: 3;
+	background-color: white;
+	height: 320px;
+	width: 320px;
+	top: 25%;
+	right: 50px;
+}
+/*
+ max闂佸憡鍔曢幊姗�磿閹绢喖绾ч柛顭戝枟閸嬨儵鎮圭�顏勬殲闁哄棴鎷�*/
+#one {
+	font-family: '閻庣敻鍋婇崰娑㈡嫃鐎ｎ喗鈷栭柛娑橆嚟閹凤拷;
+	font-size: 13px;
+	font-weight: bold;
+	margin: 10px 0 0 13px;
+	color: #333;
+}
+
+#two {
+	font-family: '閻庣敻鍋婇崰娑㈡嫃鐎ｎ喗鈷栭柛娑橆嚟閹凤拷;
+	font-size: 13px;
+	font-weight: bold;
+	margin: 10px 0 0 13px;
+	color: #333;
+}
+
+#thr {
+	font-size: 13px;
+	font-weight: bold;
+	font-family: '閻庣敻鍋婇崰娑㈡嫃鐎ｎ喗鈷栭柛娑橆嚟閹凤拷;
+	margin: 10px 0 0 10px;
+	width: 290px;
+	height: 35px;
+	background-color: #FBFBFB;
+	border-radius: 5px;
+	line-height: 35px;
+	border: 1px solid #dddddd;
+	padding-left: 7px;
+	margin-bottom: 10px;
+}
+
+#four {
+	width: 300px;
+	height: 92px;
+	font-family: '閻庣敻鍋婇崰娑㈡嫃鐎ｎ喗鈷栭柛娑橆嚟閹凤拷;
+	margin: 10px 0 0 10px;
+	background-color: #FBFBFB;
+	border-radius: 5px;
+	border: 1px solid #dddddd;
+	color: #333;
+	line-height: 30px;
+	overflow-y: auto;
+}
+
+#qzd {
+	display: none;
+	margin-left: 20px;
+	margin-top: -7;
+}
+
+.cart {
+	display: -moz-inline-box;
+	display: inline-block;
+	width: 95px;
+}
+
+.carcolor {
+	display: -moz-inline-box;
+	display: inline-block;
+	width: 16px;
+	height: 16px;
+	vertical-align: sub;
+}
+
+.cartype {
+	display: -moz-inline-box;
+	display: inline-block;
+	width: 120px;
+}
+/* 
+闂佸憡鍔曞畷鎼僾 span img 
+ */
+#bigndiv {
+	width: 320px;
+	height: 35px;
+	background-color: #568A89;/* #2490ED; */
+}
+
+#bigmapleave {
+	color: white;
+	font-family: 'Microsoft YaHei', 閻庣敻鍋婇崰娑㈡嫃鐎ｎ喗鈷栭柛娑橆嚟閹凤拷 Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	font-weight: bold;
+	line-height: 35px;
+	margin-left: 10px;
+}
+
+#sm {
+	cursor: pointer;
+	margin-left: 64%;;
+}
+
+#min {
+	position: absolute;
+	z-index: 3;
+	background-color:#293846; /*#053158; */
+	height: 32px;
+	width: 110px;
+	margin-left: 83%;
+	margin-top: 430px;
+	cursor: pointer;
+	color: white;
+	font-size: 14px;
+	font-family: 閻庣敻鍋婇崰娑㈡嫃鐎ｎ喗鈷栭柛娑橆嚟閹凤拷
+	font-weight: bolder;
+	line-height: 30px;
+	/* padding-left: 5px; */
+}
+
+/*
+闂佹眹鍨荤划顖炪�鐎ｎ喖鐭楅柡宥庡墯缁ㄧ姷绱撴担瑙勫鞍闁诲骏鎷�*/
+#resultall {
+	position: absolute;
+	z-index: 3;
+	background-color: white;
+	height: 260px;
+	width: 100%;
+	font-size: 14px;
+	color: white;
+	font-weight: bold;
+	/* top: 62%; */
+	bottom: 1;
+}
+#resultall2 {
+	position: absolute;
+	z-index: 3;
+	background-color: white;
+	height: 260px;
+	width: 100%;
+	font-size: 14px;
+	color: white;
+	font-weight: bold;
+	top: 62%;
+	bottom: 1;
+}
+/* div婵＄偑鍊栭崕濂稿磿濡ゅ懎鐤炬い鏍ㄧ箓椤ワ拷*/
+#resulthead {
+	width: 100%;
+	height: 34px;
+	background-color: #568A89;
+	line-height: 25px;
+}
+/* 缂傚倷鐒﹂幐濠氭倶婢舵劖鈷栭柛鈩冾殔瑜扮娀姊婚崒婊勫盃iv闂佹悶鍎辨晶鑺ユ櫠閿燂拷/
+#resimg {
+	line-height: 25px;
+	margin-left: 20px;
+	cursor: pointer;
+}
+/* 缂傚倷鐒﹂幐濠氭倶婢舵劖鈷栭柛婵堢┉v闂佺鐭囬崘銊у幀 */
+#result {
+	height: 234px;
+	width: 100%;
+	overflow: hidden;
+	overflow-y: auto;
+}
+
+#restable {
+	border: 1px solid #ccc;
+	width: 100%;
+	line-height: 30px;
+	text-align: center;
+	background-color: #F8F8F8;
+	font-size: 13px;
+	color: #666;
+	font-family: 'Microsoft YaHei', 閻庣敻鍋婇崰娑㈡嫃鐎ｎ喗鈷栭柛娑橆嚟閹凤拷 Arial, Helvetica, sans-serif;
+}
+/*
+閻庡綊娼荤紓姘跺疾閼稿灚濮滈柨鏇氳兌缁愩垽鎮橀悙瀛樼闁靛洦宀搁幆鍐礆椤ｆ獨start
+*/
+#alls {
+	width: 100%;
+	height: 120px;
+	/* border: 1px solid #ccc; */
+	margin: 10 0 0 25;
+	padding: 5 0 0 20;
+	font-size: 13px;
+	color: #666;
+	font-family: 'Microsoft YaHei', 閻庣敻鍋婇崰娑㈡嫃鐎ｎ喗鈷栭柛娑橆嚟閹凤拷 Arial, Helvetica, sans-serif;
+}
+
+#mytables {
+	font-size: 13px;
+	color: #666;
+	font-family: 'Microsoft YaHei', 閻庣敻鍋婇崰娑㈡嫃鐎ｎ喗鈷栭柛娑橆嚟閹凤拷 Arial, Helvetica, sans-serif;
+	line-height: 20px;
+	width: 100%;
+	height: 100%;
+	margin:5px 0px 0px 30px;
+}
+
+.bts {
+	height: 30px;
+	cursor: pointer;
+	padding: 0 10px;
+	font: 300 13px/29px 'Open Sans', Helvetica, Arial, sans-serif;
+	background-color: #296191;
+	color: white;
+	border-color: #ccc;
+	border: 1px solid #ccc;
+}
+
+.bts:hover {
+	background-color: #3276B1;
+}
+
+#cks {
+	width: 300px;
+	height: 20px;
+	background-color: #FaFaFa;
+	border: 1px solid #ccc;
+	border-bottom: none;
+}
+
+#ck {
+	width: 300px;
+	height: 20px;
+	background-color: #FaFaFa;
+	border: 1px solid #ccc;
+	border-top: none;
+}
+
+#dgs {
+	width: 300px;
+	height:67%;;
+}
+
+.gbxs {
+	border: 1px solid #A9A9A9;
+	/* height: 25px; */
+	background-color: #fafafa;
+	position: relative;
+	right: -10px;
+	width:50px;
+}
+
+.gbxs:hover {
+	background-color: #4BAAFC;
+	color: white;
+	cursor: pointer;
+}
+
+#cxxx {
+	width: 200px;
+	height: 10%;
+	position: absolute;
+	z-index: 10;
+	top: 30%;
+	left: 20%;
+	font-weight: bolder;
+	display: none;
+}
+
+#cxxxhd {
+	background-color: #568A89;
+	height: 25px;
+	line-height: 25px;
+	padding-left: 10;
+	font-size: 13px;
+	color: white;
+	font-family: 'Microsoft YaHei', 閻庣敻鍋婇崰娑㈡嫃鐎ｎ喗鈷栭柛娑橆嚟閹凤拷 Arial, Helvetica, sans-serif;
+}
+
+#connet {
+	height: 100%;
+	background-color: white;
+}
+
+#tname {
+	width: 100px;
+	margin: 10px 0px 0px 15px;
+}
+
+#thisname {
+	display: inline-flex;
+	width: 150;
+	overflow: hidden;
+	height: 30;
+}

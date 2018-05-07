@@ -1,0 +1,278 @@
+/**
+ * @author zzp
+ * @constructor 动态添加司机信息
+ */
+function pj(){
+	
+	var count=$("fieldset").size();
+	var strVar = "";
+	    strVar += "<div style=\"width: 100%;height: 100%\" id=\"sjlayer"+count+"\" class=\"smart-form\">\n";
+	    strVar += "	<header id=\"headlayer"+count+"\" class=\"chagetext\">司机信息"+count+"<\/header>\n<a id=\"but_fist"+count+"\" onclick=\"showhide("+count+")\" class=\"btn btn-default btn-sm\"> <i class=\"fa fa-plus-square\"></i>显示\隐藏 </a>";
+	    strVar += "	<fieldset class=\"showfield\" id=\"field"+count+"\">\n";
+	    strVar += "		<div class=\"col-xs-12 col-sm-6 col-md-6\">\n";
+	    strVar += "			<div class=\"row\">\n";
+	    strVar += "				<label class=\"label col col-3 text-align-right  \">\n";
+	    strVar += "            <font color=\"red\" style=\"margin-right:10px\">*<\/font>司机姓名<\/label>\n";
+	    strVar += "				<section class=\"col col-8\"> <label class=\"input\">\n";
+	    strVar += "					<input type=\"text\" id=\"driverName\" class=\"validate[required]\" name=\"driverName\" placeholder=\"\">\n";
+	    strVar += "				<\/label> <\/section>\n";
+	    strVar += "			<\/div>\n";
+	    strVar += "		<\/div>\n";
+	    strVar += "		<div class=\"col-xs-12 col-sm-6 col-md-6 \">\n";
+	    strVar += "			<div class=\"row\">\n";
+	    strVar += "				<label class=\"label col col-3 text-align-right\">性别<\/label>\n";
+	    strVar += "				<section class=\"col col-8\"> <label class=\"select\">\n";
+	    strVar += "					<select name=\"gender\" id=\"gender\">\n";
+	    strVar += "						<option value=\"0\">男<\/option>\n";
+	    strVar += "						<option value=\"1\">女<\/option>\n";
+	    strVar += "				<\/select> <i><\/i> <\/label> <\/section>\n";
+	    strVar += "			<\/div>\n";
+	    strVar += "		<\/div>\n";
+	    strVar += "    <div class=\"col-xs-12 col-sm-6 col-md-6 \">\n";
+	    strVar += "        <div class=\"row\">\n";
+	    strVar += "            <label class=\"label col col-3 text-align-right  \">出生日期<\/label>\n";
+	    strVar += "            <section class=\"col col-8\">\n";
+	    strVar += "                <label class=\"input\">\n";
+	    strVar += "                <i class=\"icon-prepend fa fa-calendar\"><\/i>\n";
+	    strVar += "                    <input type=\"text\" class=\"datepicker\" readonly=\"readonly\" id=\"birthday\" name=\"birthday\" placeholder=\"\">\n";
+	    strVar += "                <\/label>\n";
+	    strVar += "            <\/section>\n";
+	    strVar += "        <\/div>\n";
+	    strVar += "    <\/div>\n";
+	    strVar += "		<div class=\"col-xs-12 col-sm-6 col-md-6\">\n";
+	    strVar += "			<div class=\"row\">\n";
+	    strVar += "				<label class=\"label col col-3 text-align-right  \">\n";
+	    strVar += "            <font color=\"red\" style=\"margin-right:10px\">*<\/font>联系方式<\/label>\n";
+	    strVar += "				<section class=\"col col-8\"> <label class=\"input\">\n";
+	    strVar += "					<input type=\"text\" id=\"phoneNumber\" class=\"validate[custom[phone],required,custom[number]]	\" name=\"phoneNumber\" placeholder=\"\">\n";
+	    strVar += "				<\/label> <\/section>\n";
+	    strVar += "			<\/div>\n";
+	    strVar += "		<\/div>\n";
+	    strVar += "		<div class=\"clearfix\"><\/div>\n";
+	    strVar += "		<div class=\"col-xs-12 col-sm-6 col-md-6\">\n";
+	    strVar += "			<div class=\"row\">\n";
+	    strVar += "				<label class=\"label col col-3 text-align-right  \">住址<\/label>\n";
+	    strVar += "				<section class=\"col col-8\"> <label class=\"input\">\n";
+	    strVar += "					<input type=\"text\" id=\"address\" name=\"address\" placeholder=\"\">\n";
+	    strVar += "				<\/label> <\/section>\n";
+	    strVar += "			<\/div>\n";
+	    strVar += "		<\/div>\n";
+	    strVar += "		<div class=\"col-xs-12 col-sm-6 col-md-6 \">\n";
+	    strVar += "			<div class=\"row\">\n";
+	    strVar += "				<label class=\"label col col-3 text-align-right\">类别<\/label>\n";
+	    strVar += "				<section class=\"col col-8\"> <label class=\"select\">\n";
+	    strVar += "					<select name=\"ptype\" id=\"ptype\">\n";
+	    strVar += "						<option value=\"0\">司机<\/option>\n";
+	    strVar += "						<option value=\"1\">车主<\/option>\n";
+	    strVar += "						<option value=\"2\">司机、车主<\/option>\n";
+	    strVar += "				<\/select> <i><\/i> <\/label> <\/section>\n";
+	    strVar += "			<\/div>\n";
+	    strVar += "		<\/div>\n";
+	    strVar += "	\n";
+	    strVar += "		<div class=\"col-xs-12 col-sm-6 col-md-6\">\n";
+	    strVar += "			<div class=\"row\">\n";
+	    strVar += "				<label class=\"label col col-3 text-align-right  \">民族<\/label>\n";
+	    strVar += "				<section class=\"col col-8\"> <label class=\"input\">\n";
+	    strVar += "					<input type=\"text\" id=\"cardNation\" name=\"cardNation\" placeholder=\"\">\n";
+	    strVar += "				<\/label> <\/section>\n";
+	    strVar += "			<\/div>\n";
+	    strVar += "		<\/div>\n";
+	    strVar += "		<div class=\"col-xs-12 col-sm-6 col-md-6 \">\n";
+	    strVar += "			<div class=\"row\">\n";
+	    strVar += "				<label class=\"label col col-3 text-align-right  \">\n";
+	    strVar += "            <font color=\"red\" style=\"margin-right:10px\">*<\/font>身份证号<\/label>\n";
+	    strVar += "				<section class=\"col col-8\"> <label class=\"input\">\n";
+	    strVar += "					<input type=\"text\" class=\"validate[custom[chinaId],required]\" id=\"cardNumber\" name=\"cardNumber\"\n";
+	    strVar += "					placeholder=\"\"> <\/label> <\/section>\n";
+	    strVar += "			<\/div>\n";
+	    strVar += "		<\/div>\n";
+	    strVar += "		<div class=\"col-xs-12 col-sm-6 col-md-6\">\n";
+	    strVar += "			<div class=\"row\">\n";
+	    strVar += "				<label class=\"label col col-3 text-align-right  \">签发机关<\/label>\n";
+	    strVar += "				<section class=\"col col-8\"> <label class=\"input\">\n";
+	    strVar += "					<input type=\"text\" id=\"cardIssuingAuthorityAuthority\" name=\"cardIssuingAuthorityAuthority\" placeholder=\"\">\n";
+	    strVar += "				<\/label> <\/section>\n";
+	    strVar += "			<\/div>\n";
+	    strVar += "		<\/div>\n";
+	    strVar += "<!-- 				<div class=\"col-xs-12 col-sm-6 col-md-6\">\n";
+	    strVar += "			<div class=\"row\">\n";
+	    strVar += "				<label class=\"label col col-3 text-align-right  \">有效日期<\/label>\n";
+	    strVar += "				<section class=\"col col-8\"> <label class=\"input\">\n";
+	    strVar += "					<input type=\"text\" id=\"cardValidityDate\" name=\"cardValidityDate\" placeholder=\"\">\n";
+	    strVar += "				<\/label> <\/section>\n";
+	    strVar += "			<\/div>\n";
+	    strVar += "		<\/div> -->\n";
+	    strVar += "    <div class=\"col-xs-12 col-sm-6 col-md-6 \">\n";
+	    strVar += "        <div class=\"row\">\n";
+	    strVar += "            <label class=\"label col col-3 text-align-right  \">有效日期<\/label>\n";
+	    strVar += "            <section class=\"col col-8\">\n";
+	    strVar += "                <label class=\"input\">\n";
+	    strVar += "                <i class=\"icon-prepend fa fa-calendar\"><\/i>\n";
+	    strVar += "                    <input type=\"text\" class=\"datepicker\" readonly=\"readonly\" id=\"cardValidityDate\" name=\"cardValidityDate\" placeholder=\"\">\n";
+	    strVar += "                <\/label>\n";
+	    strVar += "            <\/section>\n";
+	    strVar += "        <\/div>\n";
+	    strVar += "    <\/div>				\n";
+	    strVar += "	\n";
+	    strVar += "		<div class=\"col-xs-12 col-sm-6 col-md-6\">\n";
+	    strVar += "			<div class=\"row\">\n";
+	    strVar += "				<label class=\"label col col-3 text-align-right  \">从业资格证件号<\/label>\n";
+	    strVar += "				<section class=\"col col-8\"> <label class=\"input\">\n";
+	    strVar += "					<input type=\"text\" id=\"employmentCertifiedCard\" name=\"employmentCertifiedCard\" placeholder=\"\">\n";
+	    strVar += "				<\/label> <\/section>\n";
+	    strVar += "			<\/div>\n";
+	    strVar += "		<\/div>\n";
+	    strVar += "		<div class=\"col-xs-12 col-sm-6 col-md-6\">\n";
+	    strVar += "			<div class=\"row\">\n";
+	    strVar += "				<label class=\"label col col-3 text-align-right  \">从业资格类别<\/label>\n";
+	    strVar += "				<section class=\"col col-8\"> <label class=\"input\">\n";
+	    strVar += "					<input type=\"text\" id=\"employmentType\" name=\"employmentType\" placeholder=\"\">\n";
+	    strVar += "				<\/label> <\/section>\n";
+	    strVar += "			<\/div>\n";
+	    strVar += "		<\/div>\n";
+	    strVar += "		<div class=\"col-xs-12 col-sm-6 col-md-6\">\n";
+	    strVar += "			<div class=\"row\">\n";
+	    strVar += "				<label class=\"label col col-3 text-align-right  \">发证机关<\/label>\n";
+	    strVar += "				<section class=\"col col-8\"> <label class=\"input\">\n";
+	    strVar += "					<input type=\"text\" id=\"employmentIssuingAuthority\" name=\"employmentIssuingAuthority\" placeholder=\"\">\n";
+	    strVar += "				<\/label> <\/section>\n";
+	    strVar += "			<\/div>\n";
+	    strVar += "		<\/div>\n";
+
+	    strVar += "     <div class=\"col-xs-12 col-sm-6 col-md-6 \">\n";
+	    strVar += "        <div class=\"row\">\n";
+	    strVar += "            <label class=\"label col col-3 text-align-right  \">有效日期<\/label>\n";
+	    strVar += "            <section class=\"col col-8\">\n";
+	    strVar += "                <label class=\"input\">\n";
+	    strVar += "                <i class=\"icon-prepend fa fa-calendar\"><\/i>\n";
+	    strVar += "                    <input type=\"text\" class=\"datepicker\" readonly=\"readonly\" id=\"employmentValidityDate\" name=\"employmentValidityDate\" placeholder=\"\">\n";
+	    strVar += "                <\/label>\n";
+	    strVar += "            <\/section>\n";
+	    strVar += "        <\/div>\n";
+	    strVar += "    <\/div>					\n";
+
+	    strVar += "     <div class=\"col-xs-12 col-sm-6 col-md-6 \">\n";
+	    strVar += "        <div class=\"row\">\n";
+	    strVar += "            <label class=\"label col col-3 text-align-right  \">上岗证初次发证日期<\/label>\n";
+	    strVar += "            <section class=\"col col-8\">\n";
+	    strVar += "                <label class=\"input\">\n";
+	    strVar += "                <i class=\"icon-prepend fa fa-calendar\"><\/i>\n";
+	    strVar += "                    <input type=\"text\" class=\"datepicker\" id=\"employmentLicensingDate\" name=\"employmentLicensingDate\" placeholder=\"\">\n";
+	    strVar += "                <\/label>\n";
+	    strVar += "            <\/section>\n";
+	    strVar += "        <\/div>\n";
+	    strVar += "    <\/div>					\n";
+	    strVar += "     <div class=\"col-xs-12 col-sm-6 col-md-6 \">\n";
+	    strVar += "        <div class=\"row\">\n";
+	    strVar += "            <label class=\"label col col-3 text-align-right  \">上岗证发证日期<\/label>\n";
+	    strVar += "            <section class=\"col col-8\">\n";
+	    strVar += "                <label class=\"input\">\n";
+	    strVar += "                <i class=\"icon-prepend fa fa-calendar\"><\/i>\n";
+	    strVar += "                    <input type=\"text\" class=\"datepicker\" id=\"employmentLicenseDate\" name=\"employmentLicenseDate\" placeholder=\"\">\n";
+	    strVar += "                <\/label>\n";
+	    strVar += "            <\/section>\n";
+	    strVar += "        <\/div>\n";
+	    strVar += "    <\/div>					\n";
+	    strVar += "	\n";	    
+	    strVar += "		<div class=\"col-xs-12 col-sm-6 col-md-6\">\n";
+	    strVar += "			<div class=\"row\">\n";
+	    strVar += "				<label class=\"label col col-3 text-align-right  \">国籍<\/label>\n";
+	    strVar += "				<section class=\"col col-8\"> <label class=\"input\">\n";
+	    strVar += "					<input type=\"text\" id=\"driverNationality\" name=\"driverNationality\" placeholder=\"\">\n";
+	    strVar += "				<\/label> <\/section>\n";
+	    strVar += "			<\/div>\n";
+	    strVar += "		<\/div>\n";
+	    strVar += "		<div class=\"col-xs-12 col-sm-6 col-md-6\">\n";
+	    strVar += "			<div class=\"row\">\n";
+	    strVar += "				<label class=\"label col col-3 text-align-right  \">驾驶证件号<\/label>\n";
+	    strVar += "				<section class=\"col col-8\"> <label class=\"input\">\n";
+	    strVar += "					<input type=\"text\" id=\"drivingLicense\" name=\"drivingLicense\" placeholder=\"\">\n";
+	    strVar += "				<\/label> <\/section>\n";
+	    strVar += "			<\/div>\n";
+	    strVar += "		<\/div>\n";
+
+	    strVar += "     <div class=\"col-xs-12 col-sm-6 col-md-6 \">\n";
+	    strVar += "        <div class=\"row\">\n";
+	    strVar += "            <label class=\"label col col-3 text-align-right  \">初次领证日期<\/label>\n";
+	    strVar += "            <section class=\"col col-8\">\n";
+	    strVar += "                <label class=\"input\">\n";
+	    strVar += "                <i class=\"icon-prepend fa fa-calendar\"><\/i>\n";
+	    strVar += "                    <input type=\"text\" class=\"datepicker\" readonly=\"readonly\" id=\"drvingLicensingDate\" name=\"drvingLicensingDate\" placeholder=\"\">\n";
+	    strVar += "                <\/label>\n";
+	    strVar += "            <\/section>\n";
+	    strVar += "        <\/div>\n";
+	    strVar += "     <\/div>					\n";
+	    strVar += "\n";
+	    strVar += "     <div class=\"col-xs-12 col-sm-6 col-md-6 \">\n";
+	    strVar += "        <div class=\"row\">\n";
+	    strVar += "            <label class=\"label col col-3 text-align-right  \">有效日期<\/label>\n";
+	    strVar += "            <section class=\"col col-8\">\n";
+	    strVar += "                <label class=\"input\">\n";
+	    strVar += "                <i class=\"icon-prepend fa fa-calendar\"><\/i>\n";
+	    strVar += "                    <input type=\"text\" class=\"datepicker\" readonly=\"readonly\" id=\"driverLicenseDate\" name=\"driverLicenseDate\" placeholder=\"\">\n";
+	    strVar += "                <\/label>\n";
+	    strVar += "            <\/section>\n";
+	    strVar += "        <\/div>\n";
+	    strVar += "     <\/div>					\n";
+	    strVar += "		<div class=\"col-xs-12 col-sm-6 col-md-6\">\n";
+	    strVar += "			<div class=\"row\">\n";
+	    strVar += "				<label class=\"label col col-3 text-align-right  \">准驾车型<\/label>\n";
+	    strVar += "				<section class=\"col col-8\"> <label class=\"input\">\n";
+	    strVar += "					<input type=\"text\" id=\"drivingType\" name=\"drivingType\" placeholder=\"\">\n";
+	    strVar += "				<\/label> <\/section>\n";
+	    strVar += "			<\/div>\n";
+	    strVar += "		<\/div>\n";
+	    strVar += "		<div class=\"col-xs-12 col-sm-6 col-md-6\">\n";
+	    strVar += "			<div class=\"row\">\n";
+	    strVar += "				<label class=\"label col col-3 text-align-right  \">档案编号<\/label>\n";
+	    strVar += "				<section class=\"col col-8\"> <label class=\"input\">\n";
+	    strVar += "					<input type=\"text\" id=\"driverLicenseArchivesnumber\" name=\"driverLicenseArchivesnumber\" placeholder=\"\">\n";
+	    strVar += "				<\/label> <\/section>\n";
+	    strVar += "			<\/div>\n";
+	    strVar += "		<\/div>\n";
+	    strVar += "		<div class=\"col-xs-12 col-sm-6 col-md-6\">\n";
+	    strVar += "			<div class=\"row\">\n";
+	    strVar += "				<label class=\"label col col-3 text-align-right  \">记录<\/label>\n";
+	    strVar += "				<section class=\"col col-8\"> <label class=\"input\">\n";
+	    strVar += "					<input type=\"text\" id=\"drivingRecord\" name=\"drivingRecord\" placeholder=\"\">\n";
+	    strVar += "				<\/label> <\/section>\n";
+	    strVar += "			<\/div>\n";
+	    strVar += "		<\/div>\n";
+	    strVar += "		<div class=\"col-xs-12 col-sm-6 col-md-6\">\n";
+	    strVar += "			<div class=\"row\">\n";
+	    strVar += "				<section class=\"col col-8\"> <label class=\"input\">\n";
+/*	    strVar += "	          	<input type=\"button\"  onclick=\"removefiled("+count+")\" class=\"btn btn-danger\" value=\"删除司机\" style=\"width:85px;height: 35px;font-size: 15px;\">"
+*/
+	    strVar += "	           <a  class=\"btn btn-danger\" id=\"but_fist\" onclick=\"removefiled("+count+")\" style=\"width:105px;height: 35px;font-size: 15px;line-height: 35px;\"><i class=\"fa fa-minus\"></i>&nbsp;&nbsp; 删除司机</a>"
+	    strVar += "				<\/label> <\/section>\n";
+	    strVar += "			<\/div>\n";
+	    strVar += "		<\/div>\n";
+	    strVar += "	<\/fieldset>\n";
+	    strVar += "	<\/div>	\n";
+	    $("#drivercount").val(parseInt(count)+1);
+	    $("#frmInfo2").append($(strVar).html());
+	    if(parseInt(count)>1){
+	    $('html,body').animate({scrollTop:$("#headlayer"+count+"").offset().top}, 800);
+	    }
+	   // return strVar;	
+}
+function showhide(count){
+	if($("#field"+count+"").hasClass("showfield")){
+		$("#field"+count+"").removeClass("showfield");
+		$("#field"+count+"").css("display","none");
+	}else{
+		$("#field"+count+"").css("display","block");
+		$("#field"+count+"").addClass("showfield");
+
+	}
+}
+function removefiled(count){
+	$("#field"+count+"").remove();
+	$("#headlayer"+count+"").remove();
+	$("#but_fist"+count+"").remove();
+	
+	$("header").each(function(index,element){
+	    $("#"+$(this).attr("id")+"").text("司机信息"+index);
+	});
+
+}

@@ -1,0 +1,29 @@
+::-webkit-scrollbar-track {
+    background-color: #F5F5F5;
+}
+
+::-webkit-scrollbar {
+    width: 6px;
+    background-color: #F5F5F5;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #eaeaea;
+}
+th {
+    text-align: center;
+}
+th, td { white-space: nowrap; }
+
+.center-body{
+    min-height: 549px;
+    height: auto;
+}
+.center-div{
+    padding: 10px 14px;
+}
+
+.north-body{
+    height:70px;
+    overflow:hidden;
+}
